@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tictac.css">
+
+    <title>Tic-Tac-Toe!!</title>
+</head>
+
+<body>
+    <h1>Welcome to tic-tac-toe!!</h1>
+    <p>Please click on a block to select it...</p>
+    <table>
+        <!-- Columns: -->
+        <thead>
+            <tr>
+                <th>
+                    <div class="cols">
+                    </div>
+                </th>
+                <th>
+                    <div id="col1" class="cols">
+                        - 1 -
+                    </div>
+                </th>
+                <th>
+                    <div id="col2" class="cols">
+                        - 2 -
+                    </div>
+                </th>
+                <th>
+                    <div id="col3" class="cols">
+                        - 3 -
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ROW A: -->
+            <tr>
+                <td>
+                    <div id="rowA" class="rows">
+                        - a -
+                    </div>
+                </td>
+                <td>
+                    <div id="a1" class="grid" class="unselected">
+                    </div>
+                </td>
+                <td>
+                    <div id="a2" class="grid" class="unselected">
+                    </div>
+                </td>
+                <td>
+                    <div id="a3" class="grid" class="unselected">
+                    </div>
+                </td>
+            </tr>
+            <!-- ROW B: -->
+            <tr>
+                <td>
+                    <div id="rowB" class="rows">
+                        - b -
+                    </div>
+                </td>
+                <td>
+                    <div id="b1" class="grid" class="unselected">
+                    </div>
+                </td>
+                <td>
+                    <div id="b2" class="grid" class="unselected">
+                    </div>
+                </td>
+                <td>
+                    <div id="b3" class="grid" class="unselected">
+                    </div>
+                </td>
+            </tr>
+            <!-- ROW C: -->
+            <tr>
+                <td>
+                    <div id="rowC" class="rows">
+                        - c -
+                    </div>
+                </td>
+                <td>
+                    <div id="c1" class="grid" class="unselected">
+                    </div>
+                </td>
+                <td>
+                    <div id="c2" class="grid" class="unselected">
+                    </div>
+                </td>
+                <td>
+                    <div id="c3" class="grid" class="unselected">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="ghost" class="whileGame"></p>
+    <button id="ghostButton" class="whileGame"> Click me ...</button>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
