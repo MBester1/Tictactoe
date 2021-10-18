@@ -57,7 +57,7 @@ session_start();
                 <input type="submit" name="selected" class="grid" value="a1">
                 </td>
                 <td>
-                <button type="submit" name="selected" class="grid" value="a2"></button>
+                <button type="submit" name="selected" class="grid" value="a2">X</button>
                 </td>
                 <td>
                 <button type="submit" name="selected" class="grid" value="a3"></button>
@@ -106,19 +106,24 @@ session_start();
 
     <?php
 
-    $grid = array(
-      "a1"=> null, "a2"=> null, "a3"=> null,
-      "b1"=> null, "b2"=> null, "b3"=> null,
-      "c1"=> null, "c2"=> null, "c3"=> null,
-    );
-   
-if ($grid[$_GET["selected"]]!=null){
-echo $grid[$_GET["selected"]];
-} else {
-    $grid[$_GET["selected"]] = $grid[$_GET["value"]];
-    echo $grid[$_GET["selected"]];
-}
-    ?>
+//     $grid = array(
+//       "a1"=> null, "a2"=> null, "a3"=> null,
+//       "b1"=> null, "b2"=> null, "b3"=> null,
+//       "c1"=> null, "c2"=> null, "c3"=> null,
+//     );
+
+// if ($grid[$_GET["selected"]]!=null){
+// echo $grid[$_GET["selected"]];
+// } else {
+//     $grid[$_GET["selected"]] = $grid[$_GET["value"]];
+//     echo $grid[$_GET["selected"]];
+// }
+?>
+<h1>
+    <?php 
+echo $_GET['selected'];
+?>
+</h1>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="app.js"></script> -->
