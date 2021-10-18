@@ -1,6 +1,7 @@
 body {
     background-color: #0b132b;
     font-family: 'Amatic SC', cursive;
+    color: #f26419;
 }
 
 h1 {
@@ -51,16 +52,17 @@ table {
 
 
 .grid {
-    color: #f26419;
+    color: #1c2541;
     background-color: #1c2541;
     box-sizing: border-box;
     width: 100px;
     height: 75px;
     /* padding: 6px; */
-    margin: 1.5px;
+    margin-left: 2px;
     border: 1px #5bc0be solid;
     text-align: center;
     font-size: 35px;
+    
 }
 
 
@@ -68,6 +70,7 @@ table {
 .grid:hover {
     background-color: honeydew;
     cursor: pointer;
+    color: honeydew;
 }
 
 .selected {

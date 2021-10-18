@@ -94,8 +94,6 @@ function checkWinner(grid) {
     $("#ghostButton").addClass("showButton").removeClass("whileGame");
 
 
-
-
     for (const [key, value] of Object.entries(grid)) {
       if (value === winnerxo) {
         $(`#${key}`).addClass("winner").removeClass("grid").off("click");
